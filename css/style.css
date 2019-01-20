@@ -780,7 +780,9 @@ Clients
     border: 1px solid;
     background-color: #fff;
     border-color: #dadada;
-    height: 280px;
+    min-height: 115px;
+    height: auto;
+    max-height: 280px;
 }
 .testimonial-content p {
 	font-size: 15px;
@@ -1220,5 +1222,27 @@ keyframes animation
 .myBio {
     text-align: justify;
     font-size: 12;
+}
+
+.moreinfo{
+    color: blue;
+    weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+    }
+    .testimonial-inf{
+        display: none;
+    }
+    .testimonial-content {
+        width: 210px;
+        height: 172px !important;
+    }
+    .testimonial-content p {
+        font-size: 12px;
+    }
 }
 /* END */

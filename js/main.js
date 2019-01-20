@@ -257,7 +257,7 @@ $(function(){
         $.each(sections, function(i,val) {
 
           var section = $(this),
-              section_top = section.offset().top,
+              section_top = section.offset().top - 20,
               bottom = section_top + section.height();
 
             if (top >= section_top && top <= bottom) {
@@ -517,7 +517,7 @@ $(function(){
       });
     });
 
-    $('#work-list li a.filter').on( 'click', function(e) {
+    $('#work-list li a.filter').on( 'click touchstart touch', function(e) {
 
         // Prevent the default link behavior
         e.preventDefault();
