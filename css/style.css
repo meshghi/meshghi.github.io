@@ -1170,6 +1170,23 @@ keyframes animation
 }
 
 /* Custom */
+
+#S3CSignature{
+    width:70px;
+    height:50px;
+    margin-top: -15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s ease-in;
+    z-index: 1000;
+}
+
+#S3CSignature.forceShow{
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: visibility 0s, opacity 1.3s ease-in;
+}
+
 #UOSignature{
     width:70px;
     height:50px;
@@ -1181,7 +1198,7 @@ keyframes animation
 
 #UOSignature.forceShow{
     visibility: visible !important;
-    opacity: 1;
+    opacity: 1 !important;
     transition: visibility 0s, opacity 1.3s ease-in;
 }
 

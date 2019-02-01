@@ -183,10 +183,11 @@ $(function(){
       if ( top >= 100 ) {
         navBar.addClass("nav-sticky");
         $("#UOSignature").addClass("forceShow");
-
+        $("#S3CSignature").addClass("forceShow");
       } else {
         navBar.removeClass("nav-sticky");
         $("#UOSignature").removeClass("forceShow");
+        $("#S3CSignature").removeClass("forceShow");
       }
 
       // SHow Also Scroll up Button
